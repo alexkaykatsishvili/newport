@@ -114,6 +114,7 @@ h1 {
 
 .menu {
     .item {
+        cursor: pointer;
         position: relative;
         margin: auto;
         perspective: 800px;
@@ -147,7 +148,8 @@ h1 {
             backface-visibility: hidden;
         }
         .front--first {
-            background-color: grey;
+            // background: url(../images/office.jpg) grey;
+            // background-size: cover;
         }
         .front--second {
             background-color: #d0a5a5;
@@ -155,13 +157,15 @@ h1 {
         .front--third {
             background-color: #afa7a7;
         }
-        &:hover {
-            .front {
-                transform: rotateX(-180deg);
-            }
-            .back {
-                transform: rotateX(0deg);
-            }
-        }
+        // &:hover {
+        //     .front {
+        //         transform: rotateX(-180deg);
+        //     }
+        //     .back {
+        //         transform: rotateX(0deg);
+        //     }
+        // }
+        
+
     }
 }

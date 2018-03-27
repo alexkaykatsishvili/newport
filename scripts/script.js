@@ -8,6 +8,20 @@
     });
 
 
+    $(function () {
+        $('.front').on("click", function(){
+            $(this).css("transform", "rotateX(-180deg)");
+            $('.back').css("transform", "rotateX(0deg)");
+        });
+    });
+
+    $(function () {
+        $('.back').on("click", function(){
+            $(this).css("transform", "rotateX(180deg)");
+            $('.front').css("transform", "rotateX(0deg)");
+        });
+    });
+
     var lFollowX = 0,
     lFollowY = 0,
     x = 0,

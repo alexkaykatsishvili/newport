@@ -68,6 +68,7 @@ h1 {
   .item {
     width: 100%; } }
 .menu .item {
+  cursor: pointer;
   position: relative;
   margin: auto;
   perspective: 800px; }
@@ -96,15 +97,9 @@ h1 {
     background-color: #c2bfda;
     transform: rotateX(-180deg) translateZ(0);
     backface-visibility: hidden; }
-  .menu .item .front--first {
-    background-color: grey; }
   .menu .item .front--second {
     background-color: #d0a5a5; }
   .menu .item .front--third {
     background-color: #afa7a7; }
-  .menu .item:hover .front {
-    transform: rotateX(-180deg); }
-  .menu .item:hover .back {
-    transform: rotateX(0deg); }
 
 /*# sourceMappingURL=main.css.map */
