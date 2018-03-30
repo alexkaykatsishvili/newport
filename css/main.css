@@ -99,7 +99,7 @@ h1 {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url("../images/comp.jpg") no-repeat center center;
+    background: url("../images/pattern.jpg") no-repeat center center;
     background-size: cover;
     transform: scale(1.1); }
 
@@ -120,7 +120,9 @@ h1 {
     width: 100%;
     transition: .4s ease-in;
     transition-property: background, transform;
-    transform-style: preserve-3d; }
+    transform-style: preserve-3d;
+    background: url(../images/untitled.png);
+    background-size: cover; }
   .menu .item .front {
     background-color: #dbdbdb;
     z-index: 1;
@@ -151,5 +153,8 @@ h1 {
     background-color: #d0a5a5; }
   .menu .item .front--third {
     background-color: #afa7a7; }
+.menu .item--first div {
+  background: url(../images/aboutme.png);
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

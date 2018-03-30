@@ -25,7 +25,7 @@ h1 {
         font-size: 4vmin;
         color: white; //font-size: 7vmin;
         text-align: center;
-    background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .5);
         h1 {
             text-transform: uppercase;
         }
@@ -42,15 +42,13 @@ h1 {
         }
         .box {
             position: relative;
-            vertical-align: middle;
-            //color: #0b7;
+            vertical-align: middle; //color: #0b7;
             //display: inline-block;
             //height: 60px;
             line-height: 30px;
             text-align: center;
             transition: 0.5s;
-            padding: 0 20px;
-            //cursor: pointer;
+            padding: 0 20px; //cursor: pointer;
             //border: 1px solid white;
             -webkit-transition: 0.5s;
         }
@@ -152,7 +150,7 @@ h1 {
         left: 0;
         z-index: -1;
 
-        background: url('../images/comp.jpg') no-repeat center center;
+        background: url('../images/pattern.jpg') no-repeat center center;
         background-size: cover;
 
         transform: scale(1.1);
@@ -169,6 +167,7 @@ h1 {
 
 
 .menu {
+
     .item {
         cursor: pointer;
         position: relative;
@@ -183,11 +182,11 @@ h1 {
             width: 100%;
             transition: .4s ease-in;
             transition-property: background, transform;
-            transform-style: preserve-3d; // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // flex-direction: column;
+            transform-style: preserve-3d;
+            background: url(../images/untitled.png);
+            background-size: cover;
         }
+
         .front {
             background-color: #dbdbdb;
             z-index: 1;
@@ -221,6 +220,7 @@ h1 {
                 }
             }
         }
+        
         .front--first {
             // background: url(../images/office.jpg) grey;
             // background-size: cover;
@@ -229,7 +229,8 @@ h1 {
             background-color: #d0a5a5;
         }
         .front--third {
-            background-color: #afa7a7;
+            background-color: #afa7a7; // background: url(../images/ter.png);
+            // background-size: cover;
         } // &:hover {
         //     .front {
         //         transform: rotateX(-180deg);
@@ -239,4 +240,10 @@ h1 {
         //     }
         // }
     }
+    .item--first {
+            div {
+                background: url(../images/aboutme.png);
+                background-size: cover;
+            }
+        }
 }
