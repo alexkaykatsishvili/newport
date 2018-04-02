@@ -4,7 +4,8 @@ html {
   padding: 0;
   font-family: Calibri;
   text-align: center;
-  position: relative; }
+  position: relative;
+  font-family: 'Roboto', sans-serif; }
 
 h1 {
   margin: 0;
@@ -99,7 +100,7 @@ h1 {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url("../images/pattern.jpg") no-repeat center center;
+    background: url("../images/pattern.png") #E1DECE no-repeat center center;
     background-size: cover;
     transform: scale(1.1); }
 
@@ -133,7 +134,10 @@ h1 {
     flex-direction: column; }
     .menu .item .front p {
       font-size: 5vh;
-      margin: 0; }
+      margin: 0;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase; }
   .menu .item .back {
     background-color: #c2bfda;
     transform: rotateX(-180deg) translateZ(0);
@@ -144,9 +148,11 @@ h1 {
     flex-direction: column; }
     .menu .item .back span {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin: 10px 0 10px; }
       .menu .item .back span a {
-        text-decoration: none; }
+        text-decoration: none;
+        padding-left: 10px; }
       .menu .item .back span img {
         max-width: 20px; }
   .menu .item .front--second {
@@ -155,6 +161,12 @@ h1 {
     background-color: #afa7a7; }
 .menu .item--first div {
   background: url(../images/aboutme.png);
+  background-size: cover; }
+.menu .item--second div {
+  background: url(../images/portfolio.png);
+  background-size: cover; }
+.menu .item--fourth div {
+  background: url(../images/contacts.png);
   background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
