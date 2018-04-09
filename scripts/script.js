@@ -12,6 +12,9 @@
         $('.front').on("click", function(){
             $(this).css("transform", "rotateX(-180deg)");
             $('.back').css("transform", "rotateX(0deg)");
+
+            // $(this).css("transition", "all 1s ease-in-out");
+            // $('.back').css("transition", "all 1s ease-in-out");
         });
     });
 
@@ -53,6 +56,29 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
+
+
+
+    var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+      aggressive: true,
+      timer: 0,
+      callback: function() { console.log('ouibounce fired!'); }
+    });
+    $('body').on('click', function() {
+      $('#ouibounce-modal').hide();
+    });
+    $('#ouibounce-modal .modal-footer').on('click', function() {
+      $('#ouibounce-modal').hide();
+    });
+    $('#ouibounce-modal .modal').on('click', function(e) {
+      e.stopPropagation();
+    });
+
+// window.onbeforeunload = popup;
+
+// function popup() {
+//   return alert('I see you are leaving the site');
+// }
 
 
 })(jQuery);
