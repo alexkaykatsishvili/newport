@@ -7,27 +7,27 @@ html {
     text-align: center;
     position: relative;
     font-family: 'Libre Baskerville', serif;
-}
-
-
-
-    // font-family: 'Open Sans', sans-serif;
-
-    // font-family: 'Gentium Book Basic', serif;
-
-
-
+} // font-family: 'Open Sans', sans-serif;
+// font-family: 'Gentium Book Basic', serif;
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #0000eb;
+}
 
 h1 {
     margin: 0;
-    padding: 0 0 30px 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    padding: 0 10px 20px 10px;
 }
 
 .welcome {
@@ -51,8 +51,7 @@ h1 {
     }
     .content {
         margin: 0;
-        padding: 30px 0px;
-        //border: 2px solid white;
+        padding: 30px 0px; //border: 2px solid white;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -62,6 +61,8 @@ h1 {
         background: rgba(0, 0, 0, .7);
         h1 {
             text-transform: uppercase;
+            padding: 0;
+            font-size: 6vh;
         }
 
         transform: translate3d(-50%,
@@ -69,7 +70,9 @@ h1 {
         0);
         p {
             font-style: italic;
-            padding: 0 30px;
+            padding: 0 40px 10px 40px;
+            font-size: 3vmin;
+            line-height: 1.5;
         }
         .but {
             background: none; //border: 2px solid white;
@@ -139,7 +142,8 @@ h1 {
             }
         }
         .back {
-            background-color: #c2bfda;
+            // background-color: #c2bfda; 
+            background-color: #9d96da;
             transform: rotateX(-180deg) translateZ(0);
             backface-visibility: hidden;
             display: flex;
@@ -233,7 +237,14 @@ h1 {
 @media only screen and (max-width: 600px) {
     .menu {
         .item {
-            width: 100%;
+            width: 100%; // .front {
+            //     p {
+            //         padding: 10px;
+            //     }
+            // }
+        }
+        .item--third {
+            order: 4;
         }
     }
 }

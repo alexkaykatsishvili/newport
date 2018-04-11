@@ -13,10 +13,17 @@ html {
 *:after {
   box-sizing: border-box; }
 
+p {
+  line-height: 1.5; }
+
+a {
+  color: #0000eb; }
+
 h1 {
   margin: 0;
-  padding: 0 0 30px 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5vh;
+  padding: 0 10px 20px 10px; }
 
 .welcome {
   height: 100vh;
@@ -45,10 +52,14 @@ h1 {
     background: rgba(0, 0, 0, 0.7);
     transform: translate3d(-50%, -50%, 0); }
     .welcome .content h1 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding: 0;
+      font-size: 6vh; }
     .welcome .content p {
       font-style: italic;
-      padding: 0 30px; }
+      padding: 0 40px 10px 40px;
+      font-size: 3vmin;
+      line-height: 1.5; }
     .welcome .content .but {
       background: none;
       font-size: 3vmin;
@@ -105,7 +116,7 @@ h1 {
       .menu .item .front:hover {
         border: 2px solid transparent; }
     .menu .item .back {
-      background-color: #c2bfda;
+      background-color: #9d96da;
       transform: rotateX(-180deg) translateZ(0);
       backface-visibility: hidden;
       display: flex;
@@ -161,7 +172,9 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .menu .item {
-    width: 100%; } }
+    width: 100%; }
+  .menu .item--third {
+    order: 4; } }
 .box {
   position: relative;
   vertical-align: middle;
